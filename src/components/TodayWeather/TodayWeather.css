@@ -1,0 +1,49 @@
+.container-weather{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    background-color: #5372f0;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.status span {
+    color: white;
+    font-size: 0.8rem;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+.container-info span {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.container-info span:nth-of-type(1) {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
