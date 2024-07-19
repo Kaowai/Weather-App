@@ -12,6 +12,15 @@
     background-color: #5372f0;
 }
 
+.see-more {
+    font-size: 0.8rem;
+    color: #eee;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.see-more:hover {
+    color:#fefefe;
+}
 .container-info {
     display: flex;
     flex-direction: column;
@@ -37,7 +46,7 @@ img {
     height: 80px;
 }
 
-.container-info span {
+.container-info span:not(.see-more) {
     color: white;
     font-size: 0.9rem;
 }

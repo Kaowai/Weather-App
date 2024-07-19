@@ -19,7 +19,11 @@
     align-items: start;
     gap: 15px;
 }
-.content span {
+.content > .see-more {
+    font-size: 0.7rem;
+}
+
+.content span:not(.see-more) {
     color: #fff;
     font-size: 0.8rem;
 }
