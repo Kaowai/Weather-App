@@ -18,7 +18,7 @@ function RegisterModal({ onClose, isvisible, data, location, user }) {
         if (Object.keys(user).length !== 0) {
 
             try {
-                const response = await axios.post('http://localhost:5000/api/unsubscribe', {
+                const response = await axios.post('https://weather-app-be.vercel.app/api/unsubscribe', {
                     email
                 });
                 localStorage.removeItem('user');

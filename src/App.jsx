@@ -32,7 +32,7 @@ const App = () => {
     setIsLoading(true);
     try {
       const geo = location.lat + ',' + location.lon;
-      const response = await axios.get('http://localhost:5000/api/forecast', {
+      const response = await axios.get('https://weather-app-be.vercel.app/api/forecast', {
         params: { city: geo, days: 5 }
       });
       localStorage.setItem('weatherData', JSON.stringify(response.data));
@@ -62,7 +62,7 @@ const App = () => {
     setIsCityError(false);
     setIsLoading(true);
     try {
-      const response = await axios.get('http://localhost:5000/api/forecast', {
+      const response = await axios.get('https://weather-app-be.vercel.app/api/forecast', {
         params: { city, days: 5 }
       });
       localStorage.setItem('weatherData', JSON.stringify(response.data));
@@ -86,7 +86,7 @@ const App = () => {
     setIsLoadingMore(true);
     const amount = forecast?.length + 5;
     try {
-      const response = await axios.get('http://localhost:5000/api/forecast', {
+      const response = await axios.get('https://weather-app-be.vercel.app/api/forecast', {
         params: { city, days: amount }
       });
       const updatedForecast1 = response.data.forecast.forecastday.slice(1, amount);
