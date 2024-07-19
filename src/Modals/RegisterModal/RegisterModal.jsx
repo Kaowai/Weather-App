@@ -37,7 +37,7 @@ function RegisterModal({ onClose, isvisible, data, location, user }) {
                 let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 if (re.test(email)) {
                     try {
-                        const response = await axios.post('http://localhost:5000/api/register', {
+                        const response = await axios.post('https://weather-app-be.vercel.app/api/register', {
                             name,
                             email,
                             location,
